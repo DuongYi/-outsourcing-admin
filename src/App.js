@@ -1,8 +1,11 @@
+import Routes from "./Routes";
+import { BrowserRouter as Router } from "react-router-dom";
+
 function App() {
   return (
-    <div className="App">
-      <h1>AZ Admin</h1>
-    </div>
+    <Router>
+      <Routes />
+    </Router>
   );
 }
 
