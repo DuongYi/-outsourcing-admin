@@ -38,7 +38,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-function LoginForm({ onSubmitSuccess, onSubmitFail, onCheckCaptcha }) {
+function LoginForm({ onSubmitSuccess, onSubmitFail }) {
   const classes = useStyles();
 
   return (
@@ -141,7 +141,7 @@ function LoginForm({ onSubmitSuccess, onSubmitFail, onCheckCaptcha }) {
 
           <Box mt={2}>
             <Typography variant="body2" style={{ color: "#1877f2" }}>
-              <Link className={classes.sub_question} to="/register">
+              <Link className={classes.sub_question} to="/">
                 Bạn chưa có tài khoản?
               </Link>
             </Typography>
@@ -155,13 +155,11 @@ function LoginForm({ onSubmitSuccess, onSubmitFail, onCheckCaptcha }) {
 LoginForm.propTypes = {
   onSubmitSuccess: PropTypes.func,
   onSubmitFail: PropTypes.func,
-  onCheckCaptcha: PropTypes.func,
 };
 
 LoginForm.defaultProps = {
   onSubmitSuccess: () => {},
   onSubmitFail: () => {},
-  onCheckCaptcha: () => {},
 };
 
 export default LoginForm;

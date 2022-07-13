@@ -74,7 +74,6 @@ function Login() {
     history.push("/");
   };
   const submitFailHandler = (error) => {};
-  const checkCaptchaHandler = () => {};
 
   return (
     <Page title={`${PAGE_TITLE} | ĐĂNG NHẬP`} className={classes.rootbox}>
@@ -88,7 +87,6 @@ function Login() {
             <LoginForm
               onSubmitSuccess={submitSuccessHandler}
               onSubmitFail={submitFailHandler}
-              onCheckCaptcha={checkCaptchaHandler}
             />
           </Grid>
         </Grid>
