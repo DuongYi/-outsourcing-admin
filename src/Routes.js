@@ -33,6 +33,198 @@ function Routes() {
             <Switch>
               <DashboardLayout>
                 <Route exact path="/thong-ke" component={Overview} />
+                <Route exact path="/thanh-vien" component={Overview} />
+                <Route exact path="/diem-danh" component={Overview} />
+                <Route exact path="/doanh-thu" component={Overview} />
+
+                {/* Chat thế giới */}
+                <Route exact path="/chat-tg/nap-the-cao" component={Overview} />
+                <Route exact path="/chat-tg/nap-tsr" component={Overview} />
+
+                {/* Nạp tiền */}
+                <Route exact path="/nap-tien/nap-tsr" component={Overview} />
+                <Route exact path="/nap-tien/nap-momo" component={Overview} />
+                <Route exact path="/nap-tien/nap-atm" component={Overview} />
+
+                {/* Gạch thẻ */}
+                <Route
+                  exact
+                  path="/gach-the/the-khach-nap"
+                  component={Overview}
+                />
+                <Route
+                  exact
+                  path="/gach-the/the-thanh-cong"
+                  component={Overview}
+                />
+                <Route
+                  exact
+                  path="/gach-the/cai-dat-gach-the"
+                  component={Overview}
+                />
+
+                {/* Rút tiền */}
+                <Route exact path="/rut-tien/rut-tien" component={Overview} />
+                <Route
+                  exact
+                  path="/rut-tien/lich-su-rut-the-cao"
+                  component={Overview}
+                />
+                <Route
+                  exact
+                  path="/rut-tien/danh-sach-the-cao"
+                  component={Overview}
+                />
+
+                {/* Bán nick */}
+                <Route
+                  exact
+                  path="/ban-nick/danh-sach-giao-dich"
+                  component={Overview}
+                />
+                <Route
+                  exact
+                  path="/ban-nick/danh-sach-ten-mien-block"
+                  component={Overview}
+                />
+                <Route exact path="/ban-nick/giao-dich" component={Overview} />
+                <Route exact path="/bannick/config-gia" component={Overview} />
+
+                {/* Nhập nick */}
+                <Route
+                  exact
+                  path="/nhap-nick/danh-sach-giao-dich"
+                  component={Overview}
+                />
+                <Route
+                  exact
+                  path="/nhap-nick/danh-sach-ten-mien-block"
+                  component={Overview}
+                />
+                <Route exact path="/nhap-nick/giao-dich" component={Overview} />
+                <Route
+                  exact
+                  path="/nhap-nick/config-gia"
+                  component={Overview}
+                />
+
+                {/* Bán đồ */}
+                <Route exact path="/ban-do/don-hang" component={Overview} />
+                <Route exact path="/ban-do/do-dang-ban" component={Overview} />
+
+                {/* Bán vàng */}
+                <Route exact path="/ban-vang/don-hang" component={Overview} />
+                <Route
+                  exact
+                  path="/ban-vang/lich-su-rut-vang"
+                  component={Overview}
+                />
+                <Route
+                  exact
+                  path="/ban-vang/cai-dat-ban-vang"
+                  component={Overview}
+                />
+                <Route
+                  exact
+                  path="/ban-vang/cai-dat-nhan-vat"
+                  component={Overview}
+                />
+
+                {/* Nhập vàng */}
+                <Route exact path="/nhap-vang/don-hang" component={Overview} />
+                <Route
+                  exact
+                  path="/nhap-vang/lich-su-rut-vang"
+                  component={Overview}
+                />
+                <Route
+                  exact
+                  path="/nhap-vang/cai-dat-ban-vang"
+                  component={Overview}
+                />
+                <Route
+                  exact
+                  path="/nhap-vang/cai-dat-nhan-vat"
+                  component={Overview}
+                />
+
+                {/* Rút vàng */}
+                <Route
+                  exact
+                  path="/rut-vang/nap-the-cao"
+                  component={Overview}
+                />
+                <Route exact path="/rut-vang/nap-tsr" component={Overview} />
+
+                {/* Vòng quay có lãi */}
+                <Route exact path="/vqcolai/cai-dat" component={Overview} />
+                <Route
+                  exact
+                  path="/vqcolai/danh-sach-phan-thuong"
+                  component={Overview}
+                />
+                <Route exact path="/vqcolai/lich-su" component={Overview} />
+
+                {/* Vòng quay siêu cấp */}
+                <Route exact path="/vqsieucap/cai-dat" component={Overview} />
+                <Route
+                  exact
+                  path="/vqsieucap/danh-sach-phan-thuong"
+                  component={Overview}
+                />
+                <Route exact path="/vqsieucap/lich-su" component={Overview} />
+
+                {/* Quay nick cao cấp */}
+                <Route
+                  exact
+                  path="/quaynickcaocap/cai-dat"
+                  component={Overview}
+                />
+                <Route
+                  exact
+                  path="/quaynickcaocap/danh-sach-phan-thuong"
+                  component={Overview}
+                />
+                <Route
+                  exact
+                  path="/quaynickcaocap/lich-su"
+                  component={Overview}
+                />
+
+                {/* Quay nick 50 tỷ */}
+                <Route
+                  exact
+                  path="/quaynick50ty/cai-dat"
+                  component={Overview}
+                />
+                <Route
+                  exact
+                  path="/quaynick50ty/danh-sach-phan-thuong"
+                  component={Overview}
+                />
+                <Route
+                  exact
+                  path="/quaynick50ty/lich-su"
+                  component={Overview}
+                />
+
+                {/* Quay nick Halloween */}
+                <Route exact path="/qnhalloween/cai-dat" component={Overview} />
+                <Route
+                  exact
+                  path="/qnhalloween/danh-sach-phan-thuong"
+                  component={Overview}
+                />
+                <Route exact path="/qnhalloween/lich-su" component={Overview} />
+
+                {/* Vòng quay đồ */}
+                <Route exact path="/vqdo/cai-dat" component={Overview} />
+                <Route
+                  exact
+                  path="/vqdo/danh-sach-phan-thuong"
+                  component={Overview}
+                />
+                <Route exact path="/vqdo/lich-su" component={Overview} />
               </DashboardLayout>
             </Switch>
           )}

@@ -79,12 +79,12 @@ const sections = [
         children: [
           {
             title: "Thẻ cào",
-            path: "/nap-the-cao",
+            path: "/chat-tg/nap-the-cao",
             icon: <MoneyIcon fontSize="small" />,
           },
           {
             title: "Ví thẻ siêu rẻ",
-            path: "/nap-tsr",
+            path: "/chat-tg/nap-tsr",
             icon: <AccountBalanceWalletIcon fontSize="small" />,
           },
         ],
@@ -95,17 +95,17 @@ const sections = [
         children: [
           {
             title: "Nạp từ ví THESIEURE",
-            path: "/nap-tsr",
+            path: "/nap-tien/nap-tsr",
             icon: <MoneyIcon fontSize="small" />,
           },
           {
             title: "Nạp từ ví MOMO",
-            path: "/nap-momo",
+            path: "/nap-tien/nap-momo",
             icon: <AccountBalanceWalletIcon fontSize="small" />,
           },
           {
             title: "Nạp từ ngân hàng",
-            path: "/nap-atm",
+            path: "/nap-tien/nap-atm",
             icon: <PaymentIcon fontSize="small" />,
           },
         ],
@@ -116,17 +116,17 @@ const sections = [
         children: [
           {
             title: "Thẻ khách nạp",
-            path: "/the-khach-nap",
+            path: "/gach-the/the-khach-nap",
             icon: <DirectionsWalkIcon fontSize="small" />,
           },
           {
             title: "Thẻ thành công",
-            path: "/the-thanh-cong",
+            path: "/gach-the/the-thanh-cong",
             icon: <CheckBoxRoundedIcon fontSize="small" />,
           },
           {
             title: "Cài đặt",
-            path: "/cai-dat-gach-the",
+            path: "/gach-the/cai-dat-gach-the",
             icon: <SettingsIcon fontSize="small" />,
           },
         ],
@@ -137,17 +137,17 @@ const sections = [
         children: [
           {
             title: "Rút tiền",
-            path: "/ruttien/rut-tien",
+            path: "/rut-tien/rut-tien",
             icon: <TransferWithinAStationIcon fontSize="small" />,
           },
           {
             title: "Lịch sử rút thẻ cào",
-            path: "/ruttien/lich-su-rut-the-cao",
+            path: "/rut-tien/lich-su-rut-the-cao",
             icon: <HistoryIcon fontSize="small" />,
           },
           {
             title: "Danh sách thẻ cào",
-            path: "/ruttien/danh-sach-the-cao",
+            path: "/rut-tien/danh-sach-the-cao",
             icon: <ListAltIcon fontSize="small" />,
           },
         ],
@@ -163,17 +163,17 @@ const sections = [
         children: [
           {
             title: "Danh sách giao dịch",
-            path: "/bannick/danh-sach-giao-dich",
+            path: "/ban-nick/danh-sach-giao-dich",
             icon: <ListAltIcon fontSize="small" />,
           },
           {
             title: "Danh sách tên miền block",
-            path: "/bannick/danh-sach-ten-mien-block",
+            path: "/ban-nick/danh-sach-ten-mien-block",
             icon: <FormatListBulletedIcon fontSize="small" />,
           },
           {
             title: "Giao dịch",
-            path: "/bannick/giao-dich",
+            path: "/ban-nick/giao-dich",
             icon: <CompareArrowsIcon fontSize="small" />,
           },
           {
@@ -189,22 +189,22 @@ const sections = [
         children: [
           {
             title: "Danh sách giao dịch",
-            path: "/nhapnick/danh-sach-giao-dich",
+            path: "/nhap-nick/danh-sach-giao-dich",
             icon: <ListAltIcon fontSize="small" />,
           },
           {
             title: "Danh sách tên miền block",
-            path: "/nhapnick/danh-sach-ten-mien-block",
+            path: "/nhap-nick/danh-sach-ten-mien-block",
             icon: <FormatListBulletedIcon fontSize="small" />,
           },
           {
             title: "Giao dịch",
-            path: "/nhapnick/giao-dich",
+            path: "/nhap-nick/giao-dich",
             icon: <CompareArrowsIcon fontSize="small" />,
           },
           {
             title: "Config giá",
-            path: "/nhapnick/config-gia",
+            path: "/nhap-nick/config-gia",
             icon: <SettingsApplicationsIcon fontSize="small" />,
           },
         ],
@@ -215,12 +215,12 @@ const sections = [
         children: [
           {
             title: "Đơn hàng",
-            path: "/bando/don-hang",
+            path: "/ban-do/don-hang",
             icon: <ListAltIcon fontSize="small" />,
           },
           {
             title: "Đồ đang bán",
-            path: "/bando/do-dang-ban",
+            path: "/ban-do/do-dang-ban",
             icon: <StoreIcon fontSize="small" />,
           },
         ],
@@ -231,22 +231,22 @@ const sections = [
         children: [
           {
             title: "Đơn hàng",
-            path: "/banvang/don-hang",
+            path: "/ban-vang/don-hang",
             icon: <ListAltIcon fontSize="small" />,
           },
           {
             title: "Lịch sử rút vàng",
-            path: "/banvang/lich-su-rut-vang",
+            path: "/ban-vang/lich-su-rut-vang",
             icon: <HistoryIcon fontSize="small" />,
           },
           {
             title: "Cài đặt bán vàng",
-            path: "/banvang/cai-dat-ban-vang",
+            path: "/ban-vang/cai-dat-ban-vang",
             icon: <SettingsIcon fontSize="small" />,
           },
           {
             title: "Cài đặt nhân vật",
-            path: "/banvang/cai-dat-nhan-vat",
+            path: "/ban-vang/cai-dat-nhan-vat",
             icon: <SettingsApplicationsIcon fontSize="small" />,
           },
         ],
@@ -257,22 +257,22 @@ const sections = [
         children: [
           {
             title: "Đơn hàng",
-            path: "/nhapvang/don-hang",
+            path: "/nhap-vang/don-hang",
             icon: <ListAltIcon fontSize="small" />,
           },
           {
             title: "Lịch sử rút vàng",
-            path: "/nhapvang/lich-su-rut-vang",
+            path: "/nhap-vang/lich-su-rut-vang",
             icon: <HistoryIcon fontSize="small" />,
           },
           {
             title: "Cài đặt bán vàng",
-            path: "/nhapvang/cai-dat-ban-vang",
+            path: "/nhap-vang/cai-dat-ban-vang",
             icon: <SettingsIcon fontSize="small" />,
           },
           {
             title: "Cài đặt nhân vật",
-            path: "/nhapvang/cai-dat-nhan-vat",
+            path: "/nhap-vang/cai-dat-nhan-vat",
             icon: <SettingsApplicationsIcon fontSize="small" />,
           },
         ],
@@ -283,12 +283,12 @@ const sections = [
         children: [
           {
             title: "Thẻ cào",
-            path: "/nap-the-cao",
+            path: "/rut-vang/nap-the-cao",
             icon: <MoneyIcon fontSize="small" />,
           },
           {
             title: "Ví thẻ siêu rẻ",
-            path: "/nap-tsr",
+            path: "/rut-vang/nap-tsr",
             icon: <AccountBalanceWalletIcon fontSize="small" />,
           },
         ],
@@ -495,7 +495,7 @@ function DashboardSidebar(props) {
                 {user.name}
               </Typography>
               <Typography color="textSecondary" variant="body2">
-                Số dư: {user.money}
+                Admin
               </Typography>
             </Box>
           </Box>
