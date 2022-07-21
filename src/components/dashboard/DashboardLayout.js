@@ -32,6 +32,7 @@ const useStyles = makeStyles((theme) => ({
     height: "100%",
     overflow: "auto",
     position: "relative",
+    padding: "30px",
     WebkitOverflowScrolling: "touch",
   },
 }));

@@ -6,6 +6,8 @@ import LoadingScreen from "src/components/LoadingScreen";
 
 import Overview from "src/pages/dashboard/overview";
 
+import Statistical from "src/pages/dashboard/statistical";
+
 const DashboardLayout = lazy(() =>
   import("src/components/dashboard/DashboardLayout")
 );
@@ -32,7 +34,8 @@ function Routes() {
           render={() => (
             <Switch>
               <DashboardLayout>
-                <Route exact path="/thong-ke" component={Overview} />
+                <Route exact path="/overview" component={Overview} />
+                <Route exact path="/thong-ke" component={Statistical} />
                 <Route exact path="/thanh-vien" component={Overview} />
                 <Route exact path="/diem-danh" component={Overview} />
                 <Route exact path="/doanh-thu" component={Overview} />

@@ -54,6 +54,11 @@ const sections = [
     title: "Menu tổng",
     items: [
       {
+        title: "Overview",
+        path: "/overview",
+        icon: <AssessmentIcon fontSize="small" />,
+      },
+      {
         title: "Thống kê",
         path: "/thong-ke",
         icon: <AssessmentIcon fontSize="small" />,
