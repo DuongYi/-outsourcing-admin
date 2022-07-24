@@ -46,37 +46,15 @@ const StyledTableRow = withStyles((theme) => ({
   },
 }))(TableRow);
 
-function createData(
-  id,
-  time,
-  nhapnick,
-  nhapnickmoney,
-  bando,
-  bandomoney,
-  banvang,
-  banvangmoney,
-  nhapvang,
-  nhapvangmoney,
-  vongquay,
-  vongquaymoney,
-  bannick,
-  bannickmoney
-) {
+function createData(id, time, from, reference, money, decription, status) {
   return {
     id,
     time,
-    nhapnick,
-    nhapnickmoney,
-    bando,
-    bandomoney,
-    banvang,
-    banvangmoney,
-    nhapvang,
-    nhapvangmoney,
-    vongquay,
-    vongquaymoney,
-    bannick,
-    bannickmoney,
+    from,
+    reference,
+    money,
+    decription,
+    status,
   };
 }
 
@@ -84,114 +62,83 @@ const rows = [
   createData(
     124,
     "01/01/2022",
-    251,
-    4048000,
-    159,
+    "nashurato",
+    "5562-1231",
     974000,
-    139,
-    2288026,
-    213,
-    7545784,
-    144,
-    998000,
-    20,
-    1177500
+    "8326482638949129691696aztsr87264",
+    "Thành công"
   ),
   createData(
-    125,
+    124,
     "01/01/2022",
-    251,
-    4048000,
-    159,
+    "nashurato",
+    "5562-1231",
     974000,
-    139,
-    2288026,
-    213,
-    7545784,
-    144,
-    998000,
-    20,
-    1177500
+    "8326482638949129691696aztsr87264",
+    "Thành công"
   ),
   createData(
-    126,
+    124,
     "01/01/2022",
-    251,
-    4048000,
-    159,
+    "nashurato",
+    "5562-1231",
     974000,
-    139,
-    2288026,
-    213,
-    7545784,
-    144,
-    998000,
-    20,
-    1177500
+    "8326482638949129691696aztsr87264",
+    "Thành công"
   ),
   createData(
-    127,
+    124,
     "01/01/2022",
-    251,
-    4048000,
-    159,
+    "nashurato",
+    "5562-1231",
     974000,
-    139,
-    2288026,
-    213,
-    7545784,
-    144,
-    998000,
-    20,
-    1177500
+    "8326482638949129691696aztsr87264",
+    "Thành công"
   ),
   createData(
-    128,
+    124,
     "01/01/2022",
-    251,
-    4048000,
-    159,
+    "nashurato",
+    "5562-1231",
     974000,
-    139,
-    2288026,
-    213,
-    7545784,
-    144,
-    998000,
-    20,
-    1177500
+    "8326482638949129691696aztsr87264",
+    "Thành công"
   ),
   createData(
-    129,
+    124,
     "01/01/2022",
-    251,
-    4048000,
-    159,
+    "nashurato",
+    "5562-1231",
     974000,
-    139,
-    2288026,
-    213,
-    7545784,
-    144,
-    998000,
-    20,
-    1177500
+    "8326482638949129691696aztsr87264",
+    "Thành công"
   ),
   createData(
-    130,
+    124,
     "01/01/2022",
-    251,
-    4048000,
-    159,
+    "nashurato",
+    "5562-1231",
     974000,
-    139,
-    2288026,
-    213,
-    7545784,
-    144,
-    998000,
-    20,
-    1177500
+    "8326482638949129691696aztsr87264",
+    "Thành công"
+  ),
+  createData(
+    124,
+    "01/01/2022",
+    "nashurato",
+    "5562-1231",
+    974000,
+    "8326482638949129691696aztsr87264",
+    "Thành công"
+  ),
+  createData(
+    124,
+    "01/01/2022",
+    "nashurato",
+    "5562-1231",
+    974000,
+    "8326482638949129691696aztsr87264",
+    "Thành công"
   ),
 ];
 
@@ -233,64 +180,29 @@ const headCells = [
     label: "Thời gian",
   },
   {
-    id: "nhapnick",
+    id: "from",
     disablePadding: false,
-    label: "Nhập nick",
+    label: "Từ",
   },
   {
-    id: "nhapnickmoney",
+    id: "reference",
     disablePadding: false,
-    label: "Thành tiền",
+    label: "Số tham chiếu",
   },
   {
-    id: "bando",
+    id: "money",
     disablePadding: false,
-    label: "Bán đồ",
+    label: "Số tiền",
   },
   {
-    id: "bandomoney",
+    id: "decription",
     disablePadding: false,
-    label: "Thành tiền",
+    label: "Mô tả",
   },
   {
-    id: "banvang",
+    id: "status",
     disablePadding: false,
-    label: "Bán vàng",
-  },
-  {
-    id: "banvangmoney",
-    disablePadding: false,
-    label: "Thành tiền",
-  },
-  {
-    id: "nhapvang",
-    disablePadding: false,
-    label: "Nhập vàng",
-  },
-  {
-    id: "nhapvangmoney",
-    disablePadding: false,
-    label: "Thành tiền",
-  },
-  {
-    id: "vongquay",
-    disablePadding: false,
-    label: "Vòng quay",
-  },
-  {
-    id: "vongquaymoney",
-    disablePadding: false,
-    label: "Thành tiền",
-  },
-  {
-    id: "bannick",
-    disablePadding: false,
-    label: "Bán nick",
-  },
-  {
-    id: "bannickmoney",
-    disablePadding: false,
-    label: "Thành tiền",
+    label: "Trạng thái",
   },
 ];
 
@@ -306,7 +218,7 @@ function EnhancedTableHead(props) {
         {headCells.map((headCell) => (
           <StyledTableCell
             key={headCell.id}
-            align="right"
+            align="left"
             padding={headCell.disablePadding ? "none" : "normal"}
             sortDirection={orderBy === headCell.id ? order : false}
           >
@@ -364,7 +276,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-function Statistical() {
+function Atm() {
   const classes = useStyles();
   const [order, setOrder] = useState("asc");
   const [orderBy, setOrderBy] = useState("time");
@@ -390,8 +302,8 @@ function Statistical() {
     rowsPerPage - Math.min(rowsPerPage, rows.length - page * rowsPerPage);
 
   return (
-    <Page title={`${PAGE_TITLE} | Thống kê`}>
-      <TopTitle>Thống kê</TopTitle>
+    <Page title={`${PAGE_TITLE} | Nạp tiền từ Ngân hàng`}>
+      <TopTitle>Nạp tiền từ Ngân hàng</TopTitle>
       <div className={classes.root}>
         <Paper className={classes.paper}>
           <TableContainer>
@@ -413,47 +325,24 @@ function Statistical() {
                   .map((row, index) => {
                     return (
                       <StyledTableRow tabIndex={-1} key={row.name}>
-                        <StyledTableCell align="right">
-                          {row.id}
-                        </StyledTableCell>
-                        <StyledTableCell align="right">
+                        <StyledTableCell align="left">{row.id}</StyledTableCell>
+                        <StyledTableCell align="left">
                           {row.time}
                         </StyledTableCell>
-                        <StyledTableCell align="right">
-                          {row.nhapnick}
+                        <StyledTableCell align="left">
+                          {row.from}
                         </StyledTableCell>
-                        <StyledTableCell align="right">
-                          {row.nhapnickmoney}
+                        <StyledTableCell align="left">
+                          {row.reference}
                         </StyledTableCell>
-                        <StyledTableCell align="right">
-                          {row.bando}
+                        <StyledTableCell align="left">
+                          {row.money.toLocaleString("vi-VN")}
                         </StyledTableCell>
-                        <StyledTableCell align="right">
-                          {row.bandomoney}
+                        <StyledTableCell align="left">
+                          {row.decription}
                         </StyledTableCell>
-                        <StyledTableCell align="right">
-                          {row.banvang}
-                        </StyledTableCell>
-                        <StyledTableCell align="right">
-                          {row.banvangmoney}
-                        </StyledTableCell>
-                        <StyledTableCell align="right">
-                          {row.nhapvang}
-                        </StyledTableCell>
-                        <StyledTableCell align="right">
-                          {row.nhapvangmoney}
-                        </StyledTableCell>
-                        <StyledTableCell align="right">
-                          {row.vongquay}
-                        </StyledTableCell>
-                        <StyledTableCell align="right">
-                          {row.vongquaymoney}
-                        </StyledTableCell>
-                        <StyledTableCell align="right">
-                          {row.bannick}
-                        </StyledTableCell>
-                        <StyledTableCell align="right">
-                          {row.bannickmoney}
+                        <StyledTableCell align="left">
+                          {row.status}
                         </StyledTableCell>
                       </StyledTableRow>
                     );
@@ -481,4 +370,4 @@ function Statistical() {
   );
 }
 
-export default Statistical;
+export default Atm;

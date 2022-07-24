@@ -5,8 +5,11 @@ import { Redirect, Route, Switch } from "react-router-dom";
 import LoadingScreen from "src/components/LoadingScreen";
 
 import Overview from "src/pages/dashboard/overview";
-
 import Statistical from "src/pages/dashboard/statistical";
+import DummyPage from "src/pages/dashboard/DummyPage";
+
+//Nap tiền
+import { Atm, Momo, TheSieuRe } from "src/pages/dashboard/recharge";
 
 const DashboardLayout = lazy(() =>
   import("src/components/dashboard/DashboardLayout")
@@ -36,18 +39,22 @@ function Routes() {
               <DashboardLayout>
                 <Route exact path="/overview" component={Overview} />
                 <Route exact path="/thong-ke" component={Statistical} />
-                <Route exact path="/thanh-vien" component={Overview} />
-                <Route exact path="/diem-danh" component={Overview} />
-                <Route exact path="/doanh-thu" component={Overview} />
+                <Route exact path="/thanh-vien" component={DummyPage} />
+                <Route exact path="/diem-danh" component={DummyPage} />
+                <Route exact path="/doanh-thu" component={DummyPage} />
 
                 {/* Chat thế giới */}
-                <Route exact path="/chat-tg/nap-the-cao" component={Overview} />
-                <Route exact path="/chat-tg/nap-tsr" component={Overview} />
+                <Route
+                  exact
+                  path="/chat-tg/nap-the-cao"
+                  component={DummyPage}
+                />
+                <Route exact path="/chat-tg/nap-tsr" component={DummyPage} />
 
                 {/* Nạp tiền */}
-                <Route exact path="/nap-tien/nap-tsr" component={Overview} />
-                <Route exact path="/nap-tien/nap-momo" component={Overview} />
-                <Route exact path="/nap-tien/nap-atm" component={Overview} />
+                <Route exact path="/nap-tien/nap-tsr" component={TheSieuRe} />
+                <Route exact path="/nap-tien/nap-momo" component={Momo} />
+                <Route exact path="/nap-tien/nap-atm" component={Atm} />
 
                 {/* Gạch thẻ */}
                 <Route

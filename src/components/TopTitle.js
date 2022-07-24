@@ -6,7 +6,8 @@ import PropTypes from "prop-types";
 const useStyles = makeStyles(() => ({
   topTitle: {
     textTransform: "uppercase",
-    fontWeight: 430,
+    fontWeight: 550,
+    fontFamily: "Public Sans",
     padding: "15px",
     display: "inline-block",
     position: "relative",
