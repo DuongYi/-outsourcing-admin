@@ -12,6 +12,7 @@ import {
   TableRow,
   TableSortLabel,
   Paper,
+  Typography,
 } from "@material-ui/core";
 import Page from "src/components/Page";
 
@@ -274,6 +275,14 @@ const useStyles = makeStyles((theme) => ({
     top: 20,
     width: 1,
   },
+  status: {
+    fontWeight: "600",
+    color: "#fff",
+    backgroundColor: "#00bfa6",
+    padding: "3px 10px",
+    borderRadius: 8,
+    display: "inline-block",
+  },
 }));
 
 function Atm() {
@@ -342,7 +351,17 @@ function Atm() {
                           {row.decription}
                         </StyledTableCell>
                         <StyledTableCell align="left">
-                          {row.status}
+                          <Typography
+                            className={classes.status}
+                            style={{
+                              backgroundColor:
+                                (row.status === "Thành công" && "green") ||
+                                (row.status === "Thất bại" && "red") ||
+                                (row.status === "Đang chờ" && "yellow"),
+                            }}
+                          >
+                            {row.status}
+                          </Typography>
                         </StyledTableCell>
                       </StyledTableRow>
                     );

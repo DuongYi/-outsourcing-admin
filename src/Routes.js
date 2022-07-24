@@ -11,6 +11,13 @@ import DummyPage from "src/pages/dashboard/DummyPage";
 //Nap tiền
 import { Atm, Momo, TheSieuRe } from "src/pages/dashboard/recharge";
 
+//Rút tiền
+import {
+  Withdraw,
+  WithdrawHistory,
+  WithdrawListCard,
+} from "src/pages/dashboard/withdraw";
+
 const DashboardLayout = lazy(() =>
   import("src/components/dashboard/DashboardLayout")
 );
@@ -74,16 +81,16 @@ function Routes() {
                 />
 
                 {/* Rút tiền */}
-                <Route exact path="/rut-tien/rut-tien" component={Overview} />
+                <Route exact path="/rut-tien/rut-tien" component={Withdraw} />
                 <Route
                   exact
                   path="/rut-tien/lich-su-rut-the-cao"
-                  component={Overview}
+                  component={WithdrawHistory}
                 />
                 <Route
                   exact
                   path="/rut-tien/danh-sach-the-cao"
-                  component={Overview}
+                  component={WithdrawListCard}
                 />
 
                 {/* Bán nick */}

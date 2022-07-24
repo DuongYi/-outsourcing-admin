@@ -47,12 +47,12 @@ const StyledTableRow = withStyles((theme) => ({
   },
 }))(TableRow);
 
-function createData(id, time, from, reference, money, decription, status) {
+function createData(id, time, from, formality, money, decription, status) {
   return {
     id,
     time,
     from,
-    reference,
+    formality,
     money,
     decription,
     status,
@@ -64,7 +64,7 @@ const rows = [
     124,
     "01/01/2022",
     "nashurato",
-    "5562-1231",
+    "Mua thẻ cào Viettel",
     974000,
     "8326482638949129691696aztsr87264",
     "Thành công"
@@ -73,7 +73,7 @@ const rows = [
     124,
     "01/01/2022",
     "nashurato",
-    "5562-1231",
+    "Mua thẻ cào Viettel",
     974000,
     "8326482638949129691696aztsr87264",
     "Thành công"
@@ -82,7 +82,7 @@ const rows = [
     124,
     "01/01/2022",
     "nashurato",
-    "5562-1231",
+    "Mua thẻ cào Viettel",
     974000,
     "8326482638949129691696aztsr87264",
     "Thành công"
@@ -91,7 +91,7 @@ const rows = [
     124,
     "01/01/2022",
     "nashurato",
-    "5562-1231",
+    "Mua thẻ cào Viettel",
     974000,
     "8326482638949129691696aztsr87264",
     "Thành công"
@@ -100,7 +100,7 @@ const rows = [
     124,
     "01/01/2022",
     "nashurato",
-    "5562-1231",
+    "Mua thẻ cào Viettel",
     974000,
     "8326482638949129691696aztsr87264",
     "Thành công"
@@ -109,7 +109,7 @@ const rows = [
     124,
     "01/01/2022",
     "nashurato",
-    "5562-1231",
+    "Mua thẻ cào Vinaphone",
     974000,
     "8326482638949129691696aztsr87264",
     "Thành công"
@@ -118,7 +118,7 @@ const rows = [
     124,
     "01/01/2022",
     "nashurato",
-    "5562-1231",
+    "Mua thẻ cào Vinaphone",
     974000,
     "8326482638949129691696aztsr87264",
     "Thành công"
@@ -127,7 +127,7 @@ const rows = [
     124,
     "01/01/2022",
     "nashurato",
-    "5562-1231",
+    "Mua thẻ cào Vinaphone",
     974000,
     "8326482638949129691696aztsr87264",
     "Thành công"
@@ -136,7 +136,7 @@ const rows = [
     124,
     "01/01/2022",
     "nashurato",
-    "5562-1231",
+    "Mua thẻ cào Viettel",
     974000,
     "8326482638949129691696aztsr87264",
     "Thành công"
@@ -186,9 +186,9 @@ const headCells = [
     label: "Từ",
   },
   {
-    id: "reference",
+    id: "formality",
     disablePadding: false,
-    label: "Số tham chiếu",
+    label: "Hình thức",
   },
   {
     id: "money",
@@ -285,12 +285,12 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-function Momo() {
+function WithdrawHistory() {
   const classes = useStyles();
   const [order, setOrder] = useState("asc");
   const [orderBy, setOrderBy] = useState("time");
   const [page, setPage] = useState(0);
-  const [rowsPerPage, setRowsPerPage] = useState(5);
+  const [rowsPerPage, setRowsPerPage] = useState(8);
 
   const handleRequestSort = (event, property) => {
     const isAsc = orderBy === property && order === "asc";
@@ -311,8 +311,8 @@ function Momo() {
     rowsPerPage - Math.min(rowsPerPage, rows.length - page * rowsPerPage);
 
   return (
-    <Page title={`${PAGE_TITLE} | Nạp tiền từ ví MOMO`}>
-      <TopTitle>Nạp tiền từ ví MOMO</TopTitle>
+    <Page title={`${PAGE_TITLE} | Lịch sử rút thẻ cào`}>
+      <TopTitle>Lịch sử rút thẻ cào</TopTitle>
       <div className={classes.root}>
         <Paper className={classes.paper}>
           <TableContainer>
@@ -342,7 +342,7 @@ function Momo() {
                           {row.from}
                         </StyledTableCell>
                         <StyledTableCell align="left">
-                          {row.reference}
+                          {row.formality}
                         </StyledTableCell>
                         <StyledTableCell align="left">
                           {row.money.toLocaleString("vi-VN")}
@@ -375,7 +375,7 @@ function Momo() {
             </Table>
           </TableContainer>
           <TablePagination
-            rowsPerPageOptions={[5, 10, 25]}
+            rowsPerPageOptions={[8, 16, 24]}
             component="div"
             count={rows.length}
             rowsPerPage={rowsPerPage}
@@ -389,4 +389,4 @@ function Momo() {
   );
 }
 
-export default Momo;
+export default WithdrawHistory;
