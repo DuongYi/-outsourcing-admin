@@ -11,6 +11,13 @@ import DummyPage from "src/pages/dashboard/DummyPage";
 //Nap tiền
 import { Atm, Momo, TheSieuRe } from "src/pages/dashboard/recharge";
 
+//Gạch thẻ
+import {
+  CustomerRecharge,
+  CardSuccess,
+  BrickSetting,
+} from "src/pages/dashboard/gachthe";
+
 //Rút tiền
 import {
   Withdraw,
@@ -67,17 +74,17 @@ function Routes() {
                 <Route
                   exact
                   path="/gach-the/the-khach-nap"
-                  component={Overview}
+                  component={CustomerRecharge}
                 />
                 <Route
                   exact
                   path="/gach-the/the-thanh-cong"
-                  component={Overview}
+                  component={CardSuccess}
                 />
                 <Route
                   exact
                   path="/gach-the/cai-dat-gach-the"
-                  component={Overview}
+                  component={BrickSetting}
                 />
 
                 {/* Rút tiền */}
