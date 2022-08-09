@@ -25,6 +25,14 @@ import {
   WithdrawListCard,
 } from "src/pages/dashboard/withdraw";
 
+//Bán vàng
+import {
+  GoldOrder,
+  BanVangHistory,
+  FactorSetting,
+  BotGoldSetting
+} from "src/pages/dashboard/BanVang";
+
 const DashboardLayout = lazy(() =>
   import("src/components/dashboard/DashboardLayout")
 );
@@ -137,21 +145,21 @@ function Routes() {
                 <Route exact path="/ban-do/do-dang-ban" component={Overview} />
 
                 {/* Bán vàng */}
-                <Route exact path="/ban-vang/don-hang" component={Overview} />
+                <Route exact path="/ban-vang/don-hang" component={GoldOrder} />
                 <Route
                   exact
                   path="/ban-vang/lich-su-rut-vang"
-                  component={Overview}
+                  component={BanVangHistory}
                 />
                 <Route
                   exact
                   path="/ban-vang/cai-dat-ban-vang"
-                  component={Overview}
+                  component={FactorSetting}
                 />
                 <Route
                   exact
                   path="/ban-vang/cai-dat-nhan-vat"
-                  component={Overview}
+                  component={BotGoldSetting}
                 />
 
                 {/* Nhập vàng */}
